@@ -8,7 +8,7 @@ cjrh_template
 import string
 
 
-__version__ = '2017.5.1'
+__version__ = '2017.5.2'
 
 
 class Template(string.Template):
@@ -17,12 +17,12 @@ class Template(string.Template):
     """
     def placeholders(self, allow_repeats=False):
         """
-        Return the names of the template variables in the template. Note that 
+        Return the names of the template variables in the template. Note that
         this returns a generator.
-        
+
         The ``allow_repeats`` argument will cause the iteration to skip any
         repeated variable names.
-        
+
         :type allow_repeats: bool
         :return: A generator of all the named vars
         :rtype: generator
