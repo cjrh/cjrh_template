@@ -3,17 +3,19 @@
 cjrh_template
 =============
 
-Very thin subclass of string.Template. NO DEPENDENCIES.
 
 """
-from string import Template
+import string
 
 
 __version__ = '2017.5.1'
 
 
-class cjrhTemplate(Template):
-    def template_vars(self, allow_repeats=False):
+class Template(string.Template):
+    """
+    Very thin subclass of ``string.Template``.
+    """
+    def placeholders(self, allow_repeats=False):
         """
         Return the names of the template variables in the template. Note that 
         this returns a generator.

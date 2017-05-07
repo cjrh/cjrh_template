@@ -1,25 +1,26 @@
 cjrh_template
 =============
 
-This package offers a subclass of ``string.Template``, called ``cjrhTemplate``,
+This package offers a very thin subclass of ``string.Template``
 which adds a few extra features to the standard library class.
 
-*NOTE: this package has no dependencies and will therefore not incur an
+**NOTE: this package has no dependencies and will therefore not incur an
 additional 3rd-party dependency cost. This is intentional and will not
-change.*
+change.**
 
 Get var names in the template
 -----------------------------
 
-This method returns a generator of the variable names inside the template:
+The ``placeholders()`` method returns a generator of the variable names
+inside the template:
 
 .. code:: python
 
    # main.py
-   from cjrh_template import cjrhTemplate as Template
+   from cjrh_template import Template
    s = '$person1 gave $object to $person2'
    tmpl = Template(s)
-   print(list(tmpl.template_vars()))
+   print(list(tmpl.placeholders()))
 
 Output:
 
