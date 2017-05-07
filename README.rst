@@ -34,7 +34,7 @@ parameters for template substitution. Also, note that the method returns
 a generator that will return the names sequentially in a memory-efficient
 way.
 
-There is also a ``allow_repeats`` parameter to ``template_vars()`` that will
+There is also an ``allow_repeats`` parameter to ``placeholders()`` that will
 allow the generator to return even repeated variable names, depending on the
 sequence in which they're found in the template. This could be used to generate
 frequency counts of variable names. Default is ``False``.
