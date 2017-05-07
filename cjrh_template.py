@@ -1,4 +1,4 @@
-""" Subclass for ``string.Template``, adds ``placeholders()`` method. """
+""" Subclass for string.Template: adds placeholders() method. """
 import string
 
 
