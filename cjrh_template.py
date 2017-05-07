@@ -1,14 +1,8 @@
-"""
-
-cjrh_template
-=============
-
-
-"""
+""" Subclass for ``string.Template``, adds ``placeholders()`` method. """
 import string
 
 
-__version__ = '2017.5.2'
+__version__ = '2017.5.3'
 
 
 class Template(string.Template):
