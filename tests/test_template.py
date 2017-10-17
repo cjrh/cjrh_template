@@ -24,3 +24,16 @@ def test_repeat_list_repeat():
     names = ['person1', 'thing', 'person2', 'person1']
     tmpl = Template(s)
     assert list(tmpl.placeholders(allow_repeats=True)) == names
+
+
+def test_empty():
+    s = 'This has\nno\nplaceholders\nwhatsoever'
+    tmpl = Template(s)
+    assert list(tmpl.placeholders()) == []
+
+
+def test_makefile():
+    s = '$(shell find $(SRC_DIRS))'
+    tmpl = Template(s)
+    assert list(tmpl.placeholders()) == []
+

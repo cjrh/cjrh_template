@@ -2,7 +2,7 @@
 import string
 
 
-__version__ = '2017.5.3'
+__version__ = '2017.10.17'
 
 
 class Template(string.Template):
@@ -32,4 +32,7 @@ class Template(string.Template):
                     # cost of storing previously-seen items when repeats are
                     # allowed.
                     seen.add(named)
+            if named is None:
+                # Seems to be necessary for things like "$(blah)".
+                continue
             yield named

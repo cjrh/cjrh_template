@@ -1,6 +1,27 @@
 .. image:: https://img.shields.io/badge/stdlib--only-yes-green.svg
     :target: https://img.shields.io/badge/stdlib--only-yes-green.svg
 
+.. image:: https://travis-ci.org/cjrh/cjrh_template.svg?branch=master
+    :target: https://travis-ci.org/cjrh/cjrh_template
+
+.. image:: https://coveralls.io/repos/github/cjrh/cjrh_template/badge.svg?branch=master
+    :target: https://coveralls.io/github/cjrh/cjrh_template?branch=master
+
+.. image:: https://img.shields.io/pypi/pyversions/cjrh_template.svg
+    :target: https://pypi.python.org/pypi/cjrh_template
+
+.. image:: https://img.shields.io/github/tag/cjrh/cjrh_template.svg
+    :target: https://img.shields.io/github/tag/cjrh/cjrh_template.svg
+
+.. image:: https://img.shields.io/badge/install-pip%20install%20cjrh_template-ff69b4.svg
+    :target: https://img.shields.io/badge/install-pip%20install%20cjrh_template-ff69b4.svg
+
+.. image:: https://img.shields.io/pypi/v/cjrh_template.svg
+    :target: https://img.shields.io/pypi/v/cjrh_template.svg
+
+.. image:: https://img.shields.io/badge/calver-YYYY.MM.MINOR-22bfda.svg
+    :target: http://calver.org/
+
 cjrh_template
 =============
 
