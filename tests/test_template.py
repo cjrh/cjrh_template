@@ -7,6 +7,12 @@ def test_basic():
     assert set(tmpl.placeholders()) == {'person1', 'thing', 'person2'}
 
 
+def test_basic_braces():
+    s = '${person1} gave ${thing} to ${person2}'
+    tmpl = Template(s)
+    assert set(tmpl.placeholders()) == {'person1', 'thing', 'person2'}
+
+
 def test_repeat_set():
     s = '$person1 gave $thing to $person2. $person1 was happy'
     tmpl = Template(s)

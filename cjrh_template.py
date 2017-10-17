@@ -2,7 +2,7 @@
 import string
 
 
-__version__ = '2017.10.17'
+__version__ = '2017.10.18'
 
 
 class Template(string.Template):
@@ -23,7 +23,7 @@ class Template(string.Template):
         """
         seen = set()
         for match in self.pattern.finditer(self.template):
-            named = match.group('named')
+            named = match.group('named') or match.group('braced')
             if not allow_repeats:
                 if named in seen:
                     continue
