@@ -36,4 +36,3 @@ def test_makefile():
     s = '$(shell find $(SRC_DIRS))'
     tmpl = Template(s)
     assert list(tmpl.placeholders()) == []
-
